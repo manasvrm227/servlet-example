@@ -1,0 +1,17 @@
+apply plugin: 'java'
+//apply plugin: 'eclipse'
+//apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+apply plugin: 'application'
+
+//group = 'com.example.'
+sourceCompatibility = 11
+//mainClassName = "com.shrinkme.EmployeePortalApplication.java"
+
+repositories {
+   mavenCentral()
+}
+dependencies {
+	compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+	
+}
